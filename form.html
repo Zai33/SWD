@@ -1,0 +1,110 @@
+<form action="https://mms-it.com" method="get">
+  <fieldset>
+    <legend>Student Register Form</legend>
+    <!-- input and label -->
+    <table>
+      <tr>
+        <td>
+          <label for="your_name">Your Name</label>
+        </td>
+        <td>
+          <input
+            type="text"
+            placeholder="e.g Kyaw Kyaw"
+            name="your_name"
+            id="your_name"
+            required
+            autofocus
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="your_email">Email</label>
+        </td>
+        <td>
+          <input
+            type="email"
+            placeholder="e.g kk@gmail.com"
+            id="your_email"
+            name="your_email"
+            value="@gmail.com"
+            required
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="your_password">Password</label>
+        </td>
+        <td>
+          <input
+            type="email"
+            placeholder="e.g at least 8 char"
+            id="your_password"
+            name="your_password"
+            minlength="8"
+            required
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="your_phone">Pnone No</label>
+        </td>
+        <td>
+          <input
+            type="tel"
+            placeholder="e.g 09"
+            id="your_phone"
+            name="your_phone"
+            value="09"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="your_salary">Salary</label>
+        </td>
+        <td>
+          <input
+            type="number"
+            id="your_salary"
+            placeholder="e.g 3000"
+            name="your_salary"
+            min="1000"
+            max="10000"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="db">Date of Birth</label>
+        </td>
+        <td>
+          <input type="date" id="db" name="db" max="2004-01-01" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="">Gender</label>
+        </td>
+        <td>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="gay" value="gay" />
+          <label for="gay">Gay</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button>Register</button>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+</form>

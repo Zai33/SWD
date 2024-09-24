@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid black;
+  margin: 50px;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.text1 {
+  transform-origin: top left;
+  animation-name: toRight;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-duration: 1 s;
+}
+
+.text2 {
+  transform-origin: top left;
+  animation-name: toRight;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-duration: 1 s;
+}
+
+.text3 {
+  transform-origin: top left;
+  animation-name: toRight;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-duration: 1 s;
+}
+
+.container:hover {
+  border: none;
+}
+
+.box {
+  width: 200px;
+  /* transition: 1s ease-in-out; */
+  transform-origin: center;
+  animation-name: rotateRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  /* transform: translateX(30px) translateY(30px); */
+  /* translate: 30px -50px; */
+  /* transform: rotate(-45deg);/*/
+  /* rotate: 45deg; */
+}
+
+.box:hover {
+  transform: rotateY(1turn);
+  /* rotate: 45deg; */
+  /* width: 200px;
+  transform: scale(1.5); */
+}
+
+@keyframes toRight {
+  from {
+    transform: translateX(-100pz);
+  }
+  to {
+    transform: translateX(50px);
+    color: cyan;
+    scale: 1.2;
+  }
+}
+@keyframes rotateRight {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 1turn;
+  }
+}

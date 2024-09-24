@@ -1,0 +1,9 @@
+.header {
+  color: aqua;
+  text-decoration: line-through;
+}
+
+.para {
+  color: darkgreen;
+  text-decoration: underline;
+}
